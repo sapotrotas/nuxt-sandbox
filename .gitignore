@@ -9,6 +9,11 @@ dist
 # Node dependencies
 node_modules
 
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
+
 # Logs
 logs
 *.log
@@ -16,7 +21,22 @@ logs
 # Misc
 .DS_Store
 .fleet
+dist
+dist-ssr
+coverage
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
 .idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
 
 # Local env files
 .env

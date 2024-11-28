@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { 
     enabled: true
   },
+  nitro: {
+    awsAmplify: {
+      // ...
+    }
+  },
   runtimeConfig: {
     // Private keys are only available server-side
     apiSecret: '123',

@@ -1,17 +1,28 @@
 {
   "name": "nuxt-sandbox",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev",
+    "build": "run-p \"build-only {@}\" --",
+    "build-only": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "aws-amplify": "^6.10.0",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.8.0",
+    "@aws-amplify/backend-cli": "^1.4.2",
+    "aws-cdk": "^2.137.0",
+    "aws-cdk-lib": "^2.137.0",
+    "npm-run-all2": "^7.0.1",
+    "typescript": "^5.7.2"
   }
 }
