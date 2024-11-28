@@ -4,11 +4,12 @@
   <div>
     <NuxtLink to="/todo">Todo List</NuxtLink>
   </div>
-
+<!--
   <div>
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
   </div>
+   -->
 </template>
 
 <script setup>
