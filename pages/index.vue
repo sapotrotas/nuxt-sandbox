@@ -13,6 +13,7 @@
 </template>
 
 <script setup>
+
 /*
 import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
@@ -21,6 +22,8 @@ Amplify.configure(outputs)
 const currentConfig = Amplify.getConfig() 
 console.log('Amplify current config = ', Amplify)
 */
+
+
 
 const runtimeConfig = useRuntimeConfig()
 console.log('runtimeConfig = ', runtimeConfig)
