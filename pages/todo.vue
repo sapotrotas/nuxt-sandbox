@@ -23,6 +23,8 @@ const todoList = ref()
 
 //const client = generateClient()
 
+
+
 // this will occur in the server
 const { data } = await useFetch('/api/todo')
 console.log('data = ', data.value)
