@@ -1,14 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
+
   devtools: { 
     enabled: true
   },
+
   nitro: {
     awsAmplify: {
       // ...
     }
   },
+
   runtimeConfig: {
     // Private keys are only available server-side
     apiSecret: '123',
@@ -18,6 +21,7 @@ export default defineNuxtConfig({
       //apiBase: process.env.NUXT_PUBLIC_API_BASE || '/api'
     }
   },
+
   app: {
     head: {
       charset: 'utf-8',
@@ -27,5 +31,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Bruno R. Alves Nuxt sandbox project'}
       ]
     }
-  }
+  },
+
+  modules: ['@nuxt/ui']
 })
